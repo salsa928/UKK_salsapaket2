@@ -61,7 +61,7 @@
         <li class="nav-item">
           <a class="nav-link" href="<?= base_url('generate '); ?>">
             <i class="fas fa-fw fa-download"></i>
-            <span>Laporan</span></a>
+            <span>Buat Laporan</span></a>
         </li>
 
       <?php endif; ?>

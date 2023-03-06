@@ -2,7 +2,7 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Buat Laporan</h1>
+          <h1 class="h3 mb-4 text-gray-800">BuatLaporan</h1>
 
           <div class="row">
               <div class="col-lg-12">
@@ -11,7 +11,7 @@
                         <table class="table table-striped table-bordered">
                             <thead class="table-info">
                                 <tr>
-                                   <th>Laporan</th>
+                                   <th>BuatLaporan</th>
                                    <th>Aksi</th>
                                 </tr>
                             </thead>
