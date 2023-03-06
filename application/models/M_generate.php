@@ -9,8 +9,16 @@ class M_generate extends CI_Model{
     public function getMasyarakatAll(){
         return $this->db->get('tbl_masyarakat')->result();
     }
-
+    
     public function getPetugasAll(){
         return $this->db->get_where('tbl_admin',['level' => 2])->result();
+    }
+
+    public function getTanggapanAll(){
+        // return $this->db->get('tbl_tanggapan')->result();
+        $this->db->select('*');
+        $this->db->from('tbl_tanggapan');
+        $this->db->join('tbl_admin', 'tbl_admin.id_admin = tbl_tanggapan.id_admin');
+        return $this->db->get()->result();
     }
 }

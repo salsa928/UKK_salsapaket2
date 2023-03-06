@@ -28,11 +28,11 @@
                                         <input type="text" name="no_telp" id="no_telp" class="form-control" value="<?= $pengguna['no_telp']; ?>" readonly>
                                     </div>
                                     <div class="col-md-2">
-                                        <a href="<?= base_url('admin/edit_telp'); ?>" class="btn btn-success"><i class="fa fa-edit"></i> Edit No Telp</a>
+                                        <a href="<?= base_url('admin/edit_telp'); ?>" class="btn btn-primary"><i class="fa fa-edit"></i> Edit No Telp</a>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
-                                <a href="<?= base_url('admin/edit_password'); ?>" class="btn btn-warning"><i class="fa fa-key"></i> Edit Password</a>
+                                <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Simpan</button>
+                                <a href="<?= base_url('admin/edit_password'); ?>" class="btn btn-success"><i class="fa fa-key"></i> Edit Password</a>
                             </form>
                         </div>
                     </div>

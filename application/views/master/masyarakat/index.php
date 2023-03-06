@@ -6,7 +6,7 @@
 
         	<div class="row">
         		<div class="col-lg-12">
-				<div class="alert alert-warning">
+				<div class="alert alert-info">
 					<strong>Note : </strong> Jika anda menghapus data masyarakat maka data pengaduan dan data tanggapan dengan NIK yang sama akan ikut terhapus.
 				</div>
         			<div class="card shadow">
@@ -39,9 +39,9 @@
         										<td>
         											<a href="<?= base_url('master/del_masyarakat/') . $m->nik; ?>" class="btn btn-danger btn-sm tombol-hapus"><i class="fa fa-trash"></i></a>
         											<?php if($m->aktif == 1): ?>
-        												<a href="<?= base_url('master/nonaktif_masyarakat/') . $m->nik; ?>" class="btn btn-warning btn-sm"><i class="fa fa-power-off"></i></a>
+        												<a href="<?= base_url('master/nonaktif_masyarakat/') . $m->nik; ?>" class="btn btn-secondary btn-sm"><i class="fa fa-power-off"></i></a>
         												<?php else: ?>
-        													<a href="<?= base_url('master/aktif_masyarakat/') . $m->nik; ?>" class="btn btn-success btn-sm"><i class="fa fa-power-off"></i></a>
+        													<a href="<?= base_url('master/aktif_masyarakat/') . $m->nik; ?>" class="btn btn-primary btn-sm"><i class="fa fa-power-off"></i></a>
         												<?php endif; ?>
         											</td>
         										</tr>

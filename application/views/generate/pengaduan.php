@@ -82,7 +82,20 @@
                 <td><?= $p->nik; ?></td>
                 <td><?= $p->nama; ?></td>
                 <td><?= $p->isi_laporan; ?></td>
-                <td><?php if($p->status == 1): ?>Sudah<?php else: ?>Proses<?php endif; ?></td>
+                <td>
+                    <?php if($p->status == 1): ?>
+                        Selesai
+                    <?php endif ?>
+                    <?php if($p->status == 2): ?>
+                        Ditolak
+                    <?php endif ?>
+                    <?php if($p->status == 3): ?>
+                        Menunggu
+                    <?php endif ?>
+                    <?php if($p->status == 4): ?>
+                        Proses
+                    <?php endif ?>    
+                </td>
             </tr>
         <?php } ?>
         </tbody>

@@ -11,22 +11,26 @@
                         <table class="table table-striped table-bordered">
                             <thead class="table-info">
                                 <tr>
-                                   <th>Buat laporan</th>
+                                   <th>Laporan</th>
                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Buat Laporan Petugas</td>
-                                    <td><a href="<?= base_url('generate/gen_petugas'); ?>" target="_blank" class="btn btn-success"><i class="fa fa-download"></i> Generate laporan</a></td>
+                                    <td>Laporan data Petugas</td>
+                                    <td><a href="<?= base_url('generate/gen_petugas'); ?>" target="_blank" class="btn btn-secondary"><i class="fa fa-download"></i> Generate laporan</a></td>
                                 </tr>
                                 <tr>
-                                    <td>Buat laporan Masyarakat</td>
-                                    <td><a href="<?= base_url('generate/gen_masyarakat'); ?>" target="_blank" class="btn btn-success"><i class="fa fa-download"></i> Generate laporan</a></td>
+                                    <td>laporan data Masyarakat</td>
+                                    <td><a href="<?= base_url('generate/gen_masyarakat'); ?>" target="_blank" class="btn btn-secondary"><i class="fa fa-download"></i> Generate laporan</a></td>
                                 </tr>
                                 <tr>
-                                    <td>Buat laporan Pengaduan</td>
-                                    <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-filter"></i> Filter Tanggal</button></td>
+                                    <td>laporan data Tanggapan</td>
+                                    <td><a href="<?= base_url('generate/gen_tanggapan'); ?>" target="_blank" class="btn btn-secondary"><i class="fa fa-download"></i> Generate Tanggapan</a></td>
+                                </tr>
+                                <tr>
+                                  <td>laporan data Pengaduan</td>
+                                  <td><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-filter"></i> Filter Tanggal</button></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -71,7 +75,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-        <button type="submit" class="btn btn-primary">Generate</button>
+        <button type="submit" class="btn btn-info">Generate</button>
       </div>
         </form>
     </div>

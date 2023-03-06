@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-12">
 
-                <div class="alert alert-warning">
+                <div class="alert alert-info">
                     <strong>Note : </strong> Jika anda menghapus data pengaduan maka data tanggapan dengan ID yang sama juga akan terhapus
                 </div>
 
@@ -18,6 +18,7 @@
                             <thead class="table-info">
                                 <tr>
                                     <th>Tanggal</th>
+                                    <th>Nama Pengadu</th>
                                     <th>Isi Pengaduan</th>
                                     <th>Status</th>
                                     <th>Aksi</th>
@@ -28,13 +29,21 @@
                             <strong>
                                 <tr>
                                     <td><?= date('d M Y H:i:s', $p->id_pengaduan); ?></td>
+                                    <td><?= $p->nama; ?></td>
                                     <td><?= $p->isi_laporan; ?></td>
                                     <td>
                                         <?php if($p->status == 1): ?>
                                             Selesai
-                                        <?php else: ?>
+                                        <?php endif ?>
+                                        <?php if($p->status == 2): ?>
+                                            Ditolak
+                                        <?php endif ?>
+                                        <?php if($p->status == 3): ?>
+                                            Menunggu
+                                        <?php endif ?>
+                                        <?php if($p->status == 4): ?>
                                             Proses
-                                        <?php endif; ?>
+                                        <?php endif ?>
                                     </td>
                                     <td>
                                         <a href="<?= base_url('pengaduan/del_pengaduan/') . $p->id_pengaduan; ?>" class="btn btn-danger btn-sm tombol-hapus"><i class="fa fa-trash"></i></a>

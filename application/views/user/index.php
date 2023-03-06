@@ -10,7 +10,7 @@
                 <div class="card shadow">
                   <div class="row no-gutters">
                     <div class="col-md-4">
-                      <img src="<?= base_url('asset/img/images.png'); ?>" class="img-thumbnail">
+                      <img src="<?= base_url('asset/img/user.jpg'); ?>" class="img-thumbnail">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">

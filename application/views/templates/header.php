@@ -11,8 +11,6 @@
   <link rel="stylesheet" type="text/css" href="<?= base_url('asset/datatables/bootstrap4.css'); ?>">
   <link rel="stylesheet" type="text/css" href="<?= base_url('asset/datatables/dataTables.bootstrap4.min.css'); ?>">
   <link rel="stylesheet" type="text/css" href="<?= base_url('asset/swall/dist/sweetalert2.min.css'); ?>">
-
-
 </head>
 
 <body id="page-top">

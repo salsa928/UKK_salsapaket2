@@ -13,6 +13,8 @@ class Generate extends CI_Controller{
     public function index(){
         $data['title'] = 'Aplikasi Pengaduan Masyarakat | Home';
 		$data['pengguna'] = $this->db->get_where('tbl_admin',['username' => $this->session->userdata('username')])->row_array();
+        $data['notif'] = $this->db->get('tbl_pengaduan')->result();
+        
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar');
 		$this->load->view('templates/topbar', $data);
@@ -49,5 +51,11 @@ class Generate extends CI_Controller{
         $data['petugas'] = $this->M_generate->getPetugasAll();
         $html = $this->load->view('generate/petugas', $data, true);
         $this->to_generate($html, 'Data Petugas');
+    }
+
+    public function gen_tanggapan(){
+        $data['tanggapan'] = $this->M_generate->getTanggapanAll();
+        $html = $this->load->view('generate/tanggapan', $data, true);
+        $this->to_generate($html, 'Data Tanggapan');
     }
 }

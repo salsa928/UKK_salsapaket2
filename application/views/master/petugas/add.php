@@ -49,8 +49,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="<?= base_url('master/petugas'); ?>" class="btn btn-dark"><i class="fa fa-arrow-left"></i> Kembali</a>
-                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
+                            <a href="<?= base_url('master/petugas'); ?>" class="btn btn-success"><i class="fa fa-arrow-left"></i> Kembali</a>
+                            <button type="submit" class="btn btn-info"><i class="fa fa-save"></i> Simpan</button>
                             </form>
                       </div>
                   </div>
